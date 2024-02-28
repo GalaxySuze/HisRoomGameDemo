@@ -1,15 +1,16 @@
-# Anima pluging for Godot 4
+# His Room
+《TA的房间》是一款基于Godot 4.2引擎开发的文字推理小游戏演示，玩家通过点击场景内的道具触发对话，从中收集关键线索，并依据对话内容推断解答关于房间主人的相关谜题。本版本为学习开发过程中的阶段性成果记录，仅呈现了游戏玩法的一个片段。
 
-This is the ready-to-be-installed [Anima](https://github.com/ceceppa/anima) addon for Godot4.
+# 关于美术
+菜单与场景中的背景美术素材为个人手绘，请勿在任何商业环境中未经授权使用。
 
-## NOTE
+# 代码结构
+![代码结构1](https://github.com/GalaxySuze/HisRoomGameDemo/raw/main/doc/代码结构1.jpg)
 
-**The plugin is still in development and not all the feature works fine on Godot4.**
+# 演示视频
+[B站演示视频](https://www.bilibili.com/video/BV1Te41197jR/)
 
-This repository contains only the **addon** code without the demo and documentation and has been created to allow users to install the addon via the AssetLibrary.
-
-The development happens on the [godot-4](https://github.com/ceceppa/anima/tree/godot-4) branch of the main [anima repository](https://github.com/ceceppa/anima/). So, any issue or pull request needs to be open there.
-
-## Documentation
-
-WIP documentation is available [here](https://anima.ceceppa.me/docs/)
+# 游戏截图
+![游戏截图1](https://github.com/GalaxySuze/HisRoomGameDemo/raw/main/doc/游戏截图1.png)
+![游戏截图2](https://github.com/GalaxySuze/HisRoomGameDemo/raw/main/doc/游戏截图2.png)
+![游戏截图3](https://github.com/GalaxySuze/HisRoomGameDemo/raw/main/doc/游戏截图3.png)
