@@ -1,0 +1,7 @@
+[gd_scene load_steps=3 format=3 uid="uid://qgwntiqahlv1"]
+
+[ext_resource type="PackedScene" uid="uid://0bnvymywijs4" path="res://scenes/game/Scene.tscn" id="1_nxpb4"]
+[ext_resource type="Texture2D" uid="uid://bwkbwfnf2durl" path="res://resources/game/scene_a2/scene_a2.jpg" id="2_1cxdk"]
+
+[node name="SceneA2" instance=ExtResource("1_nxpb4")]
+texture = ExtResource("2_1cxdk")

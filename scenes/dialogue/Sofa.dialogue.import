@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_10"
+type="Resource"
+uid="uid://bxro80mw7i8fn"
+path="res://.godot/imported/Sofa.dialogue-5c94ef2039f926027e38f8633a55eedc.tres"
+
+[deps]
+
+source_file="res://scenes/dialogue/Sofa.dialogue"
+dest_files=["res://.godot/imported/Sofa.dialogue-5c94ef2039f926027e38f8633a55eedc.tres"]
+
+[params]
+
+defaults=true

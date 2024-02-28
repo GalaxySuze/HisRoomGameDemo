@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_10"
+type="Resource"
+uid="uid://cxkpt8whfn25c"
+path="res://.godot/imported/Gameboy.dialogue-ee71b1560806ad8c892876833f7c014e.tres"
+
+[deps]
+
+source_file="res://scenes/dialogue/Gameboy.dialogue"
+dest_files=["res://.godot/imported/Gameboy.dialogue-ee71b1560806ad8c892876833f7c014e.tres"]
+
+[params]
+
+defaults=true

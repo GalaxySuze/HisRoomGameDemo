@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_10"
+type="Resource"
+uid="uid://dngaca6g075t"
+path="res://.godot/imported/Dustbin.dialogue-3376e30f86a84ae7476b24c69c7dc6d6.tres"
+
+[deps]
+
+source_file="res://scenes/dialogue/Dustbin.dialogue"
+dest_files=["res://.godot/imported/Dustbin.dialogue-3376e30f86a84ae7476b24c69c7dc6d6.tres"]
+
+[params]
+
+defaults=true

@@ -1,0 +1,180 @@
+[gd_scene load_steps=19 format=3 uid="uid://bfsq3rd3vmeh3"]
+
+[ext_resource type="PackedScene" uid="uid://0bnvymywijs4" path="res://scenes/game/Scene.tscn" id="1_ujeev"]
+[ext_resource type="Script" path="res://scenes/game/SceneA1.gd" id="2_avjwk"]
+[ext_resource type="Script" path="res://scenes/component/StageProp.gd" id="3_5jmon"]
+[ext_resource type="Resource" uid="uid://dngaca6g075t" path="res://scenes/dialogue/Dustbin.dialogue" id="4_5ihki"]
+[ext_resource type="Resource" uid="uid://dlyevwqe8m000" path="res://scenes/dialogue/Bookshelf.dialogue" id="5_h5emb"]
+[ext_resource type="Resource" uid="uid://bin6kixf6o5y2" path="res://scenes/dialogue/Poster.dialogue" id="6_wk6b0"]
+[ext_resource type="Resource" uid="uid://bvmocpk867fd3" path="res://scenes/dialogue/Clock.dialogue" id="7_rcsa1"]
+[ext_resource type="Resource" uid="uid://du3bt283j6fap" path="res://scenes/dialogue/Youxiwang.dialogue" id="8_wy3vf"]
+[ext_resource type="Resource" uid="uid://cxkpt8whfn25c" path="res://scenes/dialogue/Gameboy.dialogue" id="9_dmdrq"]
+[ext_resource type="Resource" uid="uid://civ2npwy6w1u1" path="res://scenes/dialogue/Slippers.dialogue" id="10_41px1"]
+[ext_resource type="Resource" uid="uid://cwtihkey1jby0" path="res://scenes/dialogue/PhotoAlbum.dialogue" id="11_6qka2"]
+[ext_resource type="Resource" uid="uid://c0m0ntb0p2e4w" path="res://scenes/dialogue/Scallion.dialogue" id="12_ckww0"]
+[ext_resource type="Resource" uid="uid://cj6s65yufhvw0" path="res://scenes/dialogue/Recorder.dialogue" id="13_j147x"]
+[ext_resource type="Resource" uid="uid://cjcd7dycl0eix" path="res://scenes/dialogue/Umbrella.dialogue" id="14_k4h5w"]
+[ext_resource type="Resource" uid="uid://15u5xo6lbfg7" path="res://scenes/dialogue/Carpet.dialogue" id="15_7ftqq"]
+[ext_resource type="Resource" uid="uid://bxro80mw7i8fn" path="res://scenes/dialogue/Sofa.dialogue" id="16_no7vy"]
+[ext_resource type="Resource" uid="uid://blikp1obn2tvn" path="res://scenes/dialogue/Tissue.dialogue" id="17_w5rpa"]
+[ext_resource type="FontFile" uid="uid://oxoa1t83sxb3" path="res://resources/fonts/HanChanChillRoundF.ttf" id="18_8h3nh"]
+
+[node name="SceneA1" instance=ExtResource("1_ujeev")]
+script = ExtResource("2_avjwk")
+
+[node name="Dustbin" type="Area2D" parent="." index="0"]
+unique_name_in_owner = true
+position = Vector2(-191, -51)
+script = ExtResource("3_5jmon")
+prop_name = "dustbin"
+dialogue_res = ExtResource("4_5ihki")
+dialogue_start = "dustbin"
+
+[node name="ActiveArea" type="CollisionPolygon2D" parent="Dustbin" index="0"]
+polygon = PackedVector2Array(-44, -2, -49, -35, -30, -55, 2, -57, 28, -45, 35, -19, 32, 30, 18, 42, -8, 20)
+
+[node name="Bookshelf" type="Area2D" parent="." index="1"]
+unique_name_in_owner = true
+position = Vector2(-20, -238)
+script = ExtResource("3_5jmon")
+prop_name = "bookshelf"
+dialogue_res = ExtResource("5_h5emb")
+dialogue_start = "bookshelf"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Bookshelf" index="0"]
+polygon = PackedVector2Array(-148, -139, 7, -226, 83, -185, 89, 123, -73, 214, -131, 185, -128, 132, -148, 127)
+
+[node name="Poster" type="Area2D" parent="." index="2"]
+position = Vector2(-461, -179)
+script = ExtResource("3_5jmon")
+prop_name = "poster"
+dialogue_res = ExtResource("6_wk6b0")
+dialogue_start = "poster"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Poster" index="0"]
+polygon = PackedVector2Array(-106, -23, 91, -132, 94, 15, -103, 127)
+
+[node name="Clock" type="Area2D" parent="." index="3"]
+position = Vector2(-245, -305)
+script = ExtResource("3_5jmon")
+prop_name = "clock"
+dialogue_res = ExtResource("7_rcsa1")
+dialogue_start = "clock"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Clock" index="0"]
+polygon = PackedVector2Array(-42, -21, 32, -60, 39, 21, -39, 64)
+
+[node name="YouXiWang" type="Area2D" parent="." index="4"]
+position = Vector2(119, 385)
+script = ExtResource("3_5jmon")
+prop_name = "youxiwang"
+dialogue_res = ExtResource("8_wy3vf")
+dialogue_start = "youxiwang"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="YouXiWang" index="0"]
+polygon = PackedVector2Array(-42, 12, -35, -2, -20, -9, -4, -27, 27, -28, 45, -6, 36, 11, 2, 30, -17, 36)
+
+[node name="Gameboy" type="Area2D" parent="." index="5"]
+position = Vector2(195, 316)
+script = ExtResource("3_5jmon")
+prop_name = "gameboy"
+dialogue_res = ExtResource("9_dmdrq")
+dialogue_start = "gameboy"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Gameboy" index="0"]
+polygon = PackedVector2Array(-29, 6, -24, -6, 6, -20, 31, -5, 26, 6, -6, 24)
+
+[node name="Slippers" type="Area2D" parent="." index="6"]
+position = Vector2(488, 236)
+script = ExtResource("3_5jmon")
+prop_name = "slippers"
+dialogue_res = ExtResource("10_41px1")
+dialogue_start = "slippers"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Slippers" index="0"]
+polygon = PackedVector2Array(-40, 6, -31, -13, -4, -24, 15, -25, 47, -5, 43, 11, 5, 32, -34, 21)
+
+[node name="PhotoAlbum" type="Area2D" parent="." index="7"]
+position = Vector2(551, -14)
+script = ExtResource("3_5jmon")
+prop_name = "photo_album"
+dialogue_res = ExtResource("11_6qka2")
+dialogue_start = "photo_album"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="PhotoAlbum" index="0"]
+polygon = PackedVector2Array(-53, 7, -20, -15, -19, -37, 24, -15, 27, 1, 68, 29, 75, 35, 32, 61)
+
+[node name="Scallion" type="Area2D" parent="." index="8"]
+position = Vector2(558, -123)
+script = ExtResource("3_5jmon")
+prop_name = "scallion"
+dialogue_res = ExtResource("12_ckww0")
+dialogue_start = "scallion"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Scallion" index="0"]
+polygon = PackedVector2Array(-51, -1, -20, -20, -12, -47, 9, -57, 29, -22, 29, 11, 54, 30, 29, 45)
+
+[node name="Recorder" type="Area2D" parent="." index="9"]
+position = Vector2(297, 353)
+script = ExtResource("3_5jmon")
+prop_name = "recorder"
+dialogue_res = ExtResource("13_j147x")
+dialogue_start = "recorder"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Recorder" index="0"]
+polygon = PackedVector2Array(-44, 19, -41, 1, 17, -32, 30, -25, 31, 0, -22, 29)
+
+[node name="Umbrella" type="Area2D" parent="." index="10"]
+position = Vector2(547, 103)
+script = ExtResource("3_5jmon")
+prop_name = "umbrella"
+dialogue_res = ExtResource("14_k4h5w")
+dialogue_start = "umbrella"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Umbrella" index="0"]
+polygon = PackedVector2Array(-8, 46, -16, 16, -11, -30, -4, -47, 14, -48, 27, -36, 4, 37)
+
+[node name="Carpet" type="Area2D" parent="." index="11"]
+position = Vector2(-283, 308)
+script = ExtResource("3_5jmon")
+prop_name = "carpet"
+dialogue_res = ExtResource("15_7ftqq")
+dialogue_start = "carpet"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Carpet" index="0"]
+polygon = PackedVector2Array(-217, -77, -225, -63, 41, 90, 391, -110, 122, -266, 127, -227, 159, -223, 292, -150, 287, -70, 59, 63, 37, 41, 20, -17, -27, -31, -29, 6, -60, -2, -88, -23, -75, -89, -148, -48, -174, -44)
+
+[node name="Sofa" type="Area2D" parent="." index="12"]
+position = Vector2(-355, 64)
+script = ExtResource("3_5jmon")
+prop_name = "sofa"
+dialogue_res = ExtResource("16_no7vy")
+dialogue_start = "sofa"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Sofa" index="0"]
+polygon = PackedVector2Array(-174, -38, 63, -166, 77, -112, 150, -72, 169, -4, -75, 130, -119, 67, -194, 28, -172, 12)
+
+[node name="Tissue" type="Area2D" parent="." index="13"]
+position = Vector2(-215, 219)
+script = ExtResource("3_5jmon")
+prop_name = "tissue"
+dialogue_res = ExtResource("17_w5rpa")
+dialogue_start = "tissue"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Tissue" index="0"]
+polygon = PackedVector2Array(-34, 3, 8, -21, 36, -2, 38, 18, -4, 44, -34, 25)
+
+[node name="PlaceMargin" type="MarginContainer" parent="." index="14"]
+offset_left = -960.0
+offset_top = -540.0
+offset_right = -856.0
+offset_bottom = -484.0
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+
+[node name="Place" type="Label" parent="PlaceMargin" index="0"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.156863, 0.156863, 0.156863, 1)
+theme_override_fonts/font = ExtResource("18_8h3nh")
+theme_override_font_sizes/font_size = 52
+text = "客厅"

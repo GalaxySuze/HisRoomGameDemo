@@ -1,0 +1,56 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="EverythingAboutHim"
+run/main_scene="res://scenes/gui/StartMenu.tscn"
+config/features=PackedStringArray("4.2", "Forward Plus")
+config/icon="res://icon.svg"
+
+[autoload]
+
+SoundManager="*res://globals/SoundManager.tscn"
+SceneChanger="*res://globals/SceneChanger.tscn"
+DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
+Game="*res://globals/Game.gd"
+Hud="res://scenes/gui/HUD.tscn"
+ClickVisualizer="res://globals/ClickVisualizer.gd"
+
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/size/resizable=false
+window/stretch/mode="canvas_items"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/dialogue_manager/plugin.cfg")
+
+[file_customization]
+
+folder_colors={
+"res://globals/": "yellow",
+"res://resources/": "teal",
+"res://scenes/": "orange"
+}
+
+[input]
+
+interact={
+"deadzone": 0.5,
+"events": [Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"button_mask":1,"position":Vector2(45, 12),"global_position":Vector2(49, 53),"factor":1.0,"button_index":1,"canceled":false,"pressed":true,"double_click":false,"script":null)
+]
+}
+
+[internationalization]
+
+locale/translations_pot_files=PackedStringArray("res://scenes/dialogue/Dustbin.dialogue", "res://scenes/dialogue/Bookshelf.dialogue", "res://scenes/dialogue/Poster.dialogue", "res://scenes/dialogue/Clock.dialogue", "res://scenes/dialogue/Youxiwang.dialogue", "res://scenes/dialogue/Gameboy.dialogue", "res://scenes/dialogue/Slippers.dialogue", "res://scenes/dialogue/PhotoAlbum.dialogue", "res://scenes/dialogue/Scallion.dialogue", "res://scenes/dialogue/Recorder.dialogue", "res://scenes/dialogue/Umbrella.dialogue", "res://scenes/dialogue/Carpet.dialogue", "res://scenes/dialogue/Sofa.dialogue", "res://scenes/dialogue/Tissue.dialogue")

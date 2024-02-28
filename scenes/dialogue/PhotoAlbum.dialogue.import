@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_10"
+type="Resource"
+uid="uid://cwtihkey1jby0"
+path="res://.godot/imported/PhotoAlbum.dialogue-a3986c0de6b49d733e9afc22c44cfacd.tres"
+
+[deps]
+
+source_file="res://scenes/dialogue/PhotoAlbum.dialogue"
+dest_files=["res://.godot/imported/PhotoAlbum.dialogue-a3986c0de6b49d733e9afc22c44cfacd.tres"]
+
+[params]
+
+defaults=true

@@ -1,0 +1,107 @@
+[gd_scene load_steps=5 format=3 uid="uid://b5s6hlmhbpy7d"]
+
+[ext_resource type="FontFile" uid="uid://oxoa1t83sxb3" path="res://resources/fonts/HanChanChillRoundF.ttf" id="1_obwoq"]
+[ext_resource type="Script" path="res://scenes/game/InferScene.gd" id="1_uxedg"]
+[ext_resource type="Theme" uid="uid://llta3efyve14" path="res://resources/themes/BasicMenuTheme.tres" id="2_8aw3m"]
+[ext_resource type="Theme" uid="uid://clo418x7u11hb" path="res://resources/themes/ItemTheme.tres" id="4_pqo8f"]
+
+[node name="InferScene" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_8aw3m")
+script = ExtResource("1_uxedg")
+
+[node name="Bg" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BtnMargin" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -100.0
+offset_bottom = 51.0
+grow_horizontal = 0
+mouse_filter = 2
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+
+[node name="Back" type="Button" parent="BtnMargin"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 52
+text = "返回"
+
+[node name="TopMargin" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -960.0
+offset_right = 960.0
+offset_bottom = 440.0
+grow_horizontal = 2
+mouse_filter = 2
+theme_override_constants/margin_top = 220
+
+[node name="Question" type="RichTextLabel" parent="TopMargin"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(1920, 220)
+layout_mode = 2
+theme_override_colors/default_color = Color(0.156863, 0.156863, 0.156863, 1)
+theme_override_fonts/normal_font = ExtResource("1_obwoq")
+theme_override_font_sizes/normal_font_size = 52
+bbcode_enabled = true
+
+[node name="BottonMargin" type="MarginContainer" parent="."]
+custom_minimum_size = Vector2(0, 260)
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -944.0
+offset_top = -267.0
+offset_right = 944.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/margin_left = 30
+theme_override_constants/margin_right = 30
+theme_override_constants/margin_bottom = 220
+
+[node name="BtnBox" type="GridContainer" parent="BottonMargin"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource("4_pqo8f")
+theme_override_constants/h_separation = 32
+theme_override_constants/v_separation = 32
+columns = 8
+
+[node name="Prop" type="Button" parent="BottonMargin/BtnBox"]
+visible = false
+layout_mode = 2
+theme_override_font_sizes/font_size = 38
+text = "拖鞋"
+
+[node name="Msg" type="RichTextLabel" parent="."]
+unique_name_in_owner = true
+visible = false
+layout_mode = 0
+offset_top = 460.0
+offset_right = 1920.0
+offset_bottom = 740.0
+bbcode_enabled = true
+text = "[wave][center][color=#FF6616][font_size=52]不对, 在想想[/font_size][/color][/center][/wave]"
+
+[connection signal="pressed" from="BtnMargin/Back" to="." method="_on_back_pressed"]

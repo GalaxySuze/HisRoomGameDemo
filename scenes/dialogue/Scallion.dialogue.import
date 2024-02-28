@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_10"
+type="Resource"
+uid="uid://c0m0ntb0p2e4w"
+path="res://.godot/imported/Scallion.dialogue-6d9ef7480c4a0cb8ff166f0f5ad46acd.tres"
+
+[deps]
+
+source_file="res://scenes/dialogue/Scallion.dialogue"
+dest_files=["res://.godot/imported/Scallion.dialogue-6d9ef7480c4a0cb8ff166f0f5ad46acd.tres"]
+
+[params]
+
+defaults=true

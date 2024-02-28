@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_10"
+type="Resource"
+uid="uid://cj6s65yufhvw0"
+path="res://.godot/imported/Recorder.dialogue-c30ff181be3f23cbc6dd9753fe7e3e05.tres"
+
+[deps]
+
+source_file="res://scenes/dialogue/Recorder.dialogue"
+dest_files=["res://.godot/imported/Recorder.dialogue-c30ff181be3f23cbc6dd9753fe7e3e05.tres"]
+
+[params]
+
+defaults=true

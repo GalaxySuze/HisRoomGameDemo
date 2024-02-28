@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_10"
+type="Resource"
+uid="uid://blikp1obn2tvn"
+path="res://.godot/imported/Tissue.dialogue-632a7813b9c56876a9080f8aab7f0ba6.tres"
+
+[deps]
+
+source_file="res://scenes/dialogue/Tissue.dialogue"
+dest_files=["res://.godot/imported/Tissue.dialogue-632a7813b9c56876a9080f8aab7f0ba6.tres"]
+
+[params]
+
+defaults=true

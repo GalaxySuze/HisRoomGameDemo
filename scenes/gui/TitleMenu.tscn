@@ -1,0 +1,44 @@
+[gd_scene load_steps=4 format=3 uid="uid://c6ox2vucujyv8"]
+
+[ext_resource type="Script" path="res://scenes/gui/TitleMenu.gd" id="1_122x2"]
+[ext_resource type="Theme" uid="uid://llta3efyve14" path="res://resources/themes/BasicMenuTheme.tres" id="1_ldff4"]
+[ext_resource type="Texture2D" uid="uid://4lx6un8j3cql" path="res://resources/images/title_menu_bg.png" id="2_a5pvy"]
+
+[node name="TitleMenu" type="TextureRect"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_ldff4")
+texture = ExtResource("2_a5pvy")
+script = ExtResource("1_122x2")
+
+[node name="Back" type="Button" parent="."]
+layout_mode = 2
+offset_left = 806.0
+offset_top = 594.0
+offset_right = 1090.0
+offset_bottom = 703.0
+text = "返回游戏"
+
+[node name="Start" type="Button" parent="."]
+layout_mode = 2
+offset_left = 1504.0
+offset_top = 346.0
+offset_right = 1788.0
+offset_bottom = 455.0
+text = "首页"
+
+[node name="Quit" type="Button" parent="."]
+layout_mode = 2
+offset_left = 1188.0
+offset_top = 2.0
+offset_right = 1426.0
+offset_bottom = 90.0
+theme_override_font_sizes/font_size = 42
+text = "退出游戏"
+
+[connection signal="pressed" from="Back" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]

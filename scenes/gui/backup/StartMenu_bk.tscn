@@ -1,0 +1,194 @@
+[gd_scene load_steps=14 format=3 uid="uid://dqvyqcbgywkid"]
+
+[ext_resource type="Theme" uid="uid://bnmx417yef3el" path="res://resources/themes/MenuTheme.tres" id="1_gejjt"]
+[ext_resource type="Script" path="res://scenes/gui/StartMenu.gd" id="2_n02bc"]
+[ext_resource type="Texture2D" uid="uid://u0w5mvkn6xwd" path="res://resources/spirits/gui/ui_balloon.png" id="3_kawuo"]
+[ext_resource type="Texture2D" uid="uid://xmonhx3m5cbh" path="res://resources/spirits/gui/tile_heart.png" id="4_2htsk"]
+[ext_resource type="Texture2D" uid="uid://dhf75pxccrv8j" path="res://resources/spirits/gui/tile_bush.png" id="5_dxusl"]
+[ext_resource type="Texture2D" uid="uid://cjkamqaquxm14" path="res://resources/spirits/gui/tile_border.png" id="6_0ilog"]
+[ext_resource type="Texture2D" uid="uid://yjsruv0nslhv" path="res://resources/spirits/gui/ui_numXlarge.png" id="7_errm8"]
+[ext_resource type="Texture2D" uid="uid://cxhrcgalnwsyw" path="res://resources/spirits/gui/tile_castle.png" id="8_37g0j"]
+[ext_resource type="Texture2D" uid="uid://whkfv6hbhx44" path="res://resources/spirits/gui/tile_item.png" id="9_ogvdc"]
+[ext_resource type="Texture2D" uid="uid://d152w77kgkheb" path="res://resources/spirits/gui/item_pencil.png" id="10_aocxj"]
+[ext_resource type="FontFile" uid="uid://ijgviveng7w7" path="res://resources/fonts/ShouXieFont.otf" id="11_qj8ah"]
+
+[sub_resource type="Gradient" id="Gradient_bykg6"]
+colors = PackedColorArray(0.890196, 0.878431, 0.85098, 1, 0.77299, 0.747734, 0.697236, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_gg0xy"]
+gradient = SubResource("Gradient_bykg6")
+
+[node name="StartMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_gejjt")
+script = ExtResource("2_n02bc")
+
+[node name="Bg" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("GradientTexture1D_gg0xy")
+metadata/_edit_lock_ = true
+
+[node name="BgDec" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Ele1" type="TextureRect" parent="BgDec"]
+self_modulate = Color(0.59375, 0.652344, 0.570313, 1)
+layout_mode = 0
+offset_left = -857.0
+offset_top = -335.0
+offset_right = -637.0
+offset_bottom = -115.0
+rotation = -0.785398
+texture = ExtResource("3_kawuo")
+
+[node name="Ele2" type="TextureRect" parent="BgDec"]
+self_modulate = Color(1, 0.768627, 0.219608, 1)
+layout_mode = 0
+offset_left = 678.0
+offset_top = -473.0
+offset_right = 888.0
+offset_bottom = -263.0
+rotation = 0.436332
+texture = ExtResource("4_2htsk")
+
+[node name="Ele3" type="TextureRect" parent="BgDec"]
+self_modulate = Color(0.87451, 0.356863, 0.266667, 1)
+layout_mode = 0
+offset_left = -642.0
+offset_top = 12.0
+offset_right = -432.0
+offset_bottom = 222.0
+texture = ExtResource("5_dxusl")
+
+[node name="Ele4" type="TextureRect" parent="BgDec"]
+self_modulate = Color(0.411765, 0.611765, 0.592157, 1)
+layout_mode = 0
+offset_left = 814.0
+offset_top = -45.0
+offset_right = 1024.0
+offset_bottom = 165.0
+rotation = 0.261799
+texture = ExtResource("6_0ilog")
+
+[node name="Ele5" type="TextureRect" parent="BgDec"]
+self_modulate = Color(0.792157, 0.694118, 0.811765, 1)
+layout_mode = 0
+offset_left = 566.0
+offset_top = 684.0
+offset_right = 776.0
+offset_bottom = 894.0
+rotation = -2.0944
+texture = ExtResource("7_errm8")
+
+[node name="Ele6" type="TextureRect" parent="."]
+self_modulate = Color(0.94902, 0.592157, 0.266667, 1)
+layout_mode = 0
+offset_left = 112.0
+offset_top = 896.0
+offset_right = 322.0
+offset_bottom = 1106.0
+rotation = 0.174533
+texture = ExtResource("8_37g0j")
+
+[node name="Ele7" type="TextureRect" parent="."]
+self_modulate = Color(0.952941, 0.858824, 0.443137, 1)
+layout_mode = 0
+offset_left = 1799.0
+offset_top = 888.0
+offset_right = 2009.0
+offset_bottom = 1098.0
+rotation = 0.174533
+texture = ExtResource("9_ogvdc")
+
+[node name="Ele8" type="TextureRect" parent="."]
+self_modulate = Color(0.949219, 0.855469, 0.441406, 1)
+layout_mode = 0
+offset_left = 921.0
+offset_top = 133.0
+offset_right = 1049.0
+offset_bottom = 389.0
+rotation = -3.83798
+texture = ExtResource("10_aocxj")
+
+[node name="TitleMargin" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 463.0
+grow_horizontal = 2
+theme_override_constants/margin_top = 260
+metadata/_edit_lock_ = true
+
+[node name="Title" type="RichTextLabel" parent="TitleMargin"]
+clip_contents = false
+layout_mode = 2
+theme_override_colors/default_color = Color(0.156863, 0.156863, 0.156863, 1)
+theme_override_fonts/normal_font = ExtResource("11_qj8ah")
+theme_override_font_sizes/normal_font_size = 220
+bbcode_enabled = true
+text = "[center]关于[wave][color=#5B5A68][outline_color=#fff][outline_size=70]TA[/outline_size][/outline_color][/color][/wave]的一切"
+autowrap_mode = 0
+
+[node name="BtnBar" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -48.0
+offset_top = -90.5
+offset_right = 48.0
+offset_bottom = 90.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 16
+alignment = 1
+metadata/_edit_lock_ = true
+
+[node name="BtnMargin" type="MarginContainer" parent="BtnBar"]
+layout_mode = 2
+theme_override_constants/margin_top = 390
+
+[node name="New" type="Button" parent="BtnBar"]
+layout_mode = 2
+text = "新游戏"
+
+[node name="Load" type="Button" parent="BtnBar"]
+layout_mode = 2
+text = "继续游戏"
+
+[node name="Setting" type="Button" parent="BtnBar"]
+layout_mode = 2
+text = "设置"
+
+[node name="Quit" type="Button" parent="BtnBar"]
+layout_mode = 2
+text = "退出"
+
+[connection signal="item_rect_changed" from="." to="." method="_on_item_rect_changed"]
+[connection signal="pressed" from="BtnBar/New" to="." method="_on_new_pressed"]
+[connection signal="pressed" from="BtnBar/Load" to="." method="_on_load_pressed"]
+[connection signal="pressed" from="BtnBar/Setting" to="." method="_on_setting_pressed"]
+[connection signal="pressed" from="BtnBar/Quit" to="." method="_on_quit_pressed"]

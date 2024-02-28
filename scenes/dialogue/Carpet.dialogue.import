@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_10"
+type="Resource"
+uid="uid://15u5xo6lbfg7"
+path="res://.godot/imported/Carpet.dialogue-b274fbb00d454baa7560e312a890310d.tres"
+
+[deps]
+
+source_file="res://scenes/dialogue/Carpet.dialogue"
+dest_files=["res://.godot/imported/Carpet.dialogue-b274fbb00d454baa7560e312a890310d.tres"]
+
+[params]
+
+defaults=true

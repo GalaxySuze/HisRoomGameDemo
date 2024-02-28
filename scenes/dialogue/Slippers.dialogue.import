@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_10"
+type="Resource"
+uid="uid://civ2npwy6w1u1"
+path="res://.godot/imported/Slippers.dialogue-7551645c7197db83acec0ada08497dda.tres"
+
+[deps]
+
+source_file="res://scenes/dialogue/Slippers.dialogue"
+dest_files=["res://.godot/imported/Slippers.dialogue-7551645c7197db83acec0ada08497dda.tres"]
+
+[params]
+
+defaults=true

@@ -1,0 +1,167 @@
+[gd_scene load_steps=8 format=3 uid="uid://hgwjsyrvmahl"]
+
+[ext_resource type="Theme" uid="uid://bnmx417yef3el" path="res://resources/themes/MenuTheme.tres" id="1_0wpk1"]
+[ext_resource type="Script" path="res://scenes/gui/SettingMenu.gd" id="2_0dfc2"]
+[ext_resource type="FontFile" uid="uid://ijgviveng7w7" path="res://resources/fonts/ShouXieFont.otf" id="2_tmf38"]
+[ext_resource type="FontFile" uid="uid://oxoa1t83sxb3" path="res://resources/fonts/HanChanChillRoundF.ttf" id="3_72ole"]
+[ext_resource type="Script" path="res://scenes/gui/Slider/VolumeSlider.gd" id="3_mav8v"]
+
+[sub_resource type="Gradient" id="Gradient_sjvfo"]
+colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_lx8na"]
+gradient = SubResource("Gradient_sjvfo")
+
+[node name="SettingMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_0wpk1")
+script = ExtResource("2_0dfc2")
+
+[node name="Bg" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("GradientTexture1D_lx8na")
+metadata/_edit_lock_ = true
+
+[node name="MarginBorder" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="PanelBox" type="HBoxContainer" parent="MarginBorder"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="SettingPanel" type="Panel" parent="MarginBorder/PanelBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="MarginPanel" type="MarginContainer" parent="MarginBorder/PanelBox/SettingPanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 32
+theme_override_constants/margin_top = 32
+theme_override_constants/margin_right = 32
+theme_override_constants/margin_bottom = 32
+
+[node name="SettingBox" type="VBoxContainer" parent="MarginBorder/PanelBox/SettingPanel/MarginPanel"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/separation = 22
+
+[node name="FullScene" type="Button" parent="MarginBorder/PanelBox/SettingPanel/MarginPanel/SettingBox"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "全屏游戏"
+
+[node name="WindowScene" type="Button" parent="MarginBorder/PanelBox/SettingPanel/MarginPanel/SettingBox"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+text = "窗口游戏"
+
+[node name="Label1" type="Label" parent="MarginBorder/PanelBox/SettingPanel/MarginPanel/SettingBox"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_72ole")
+theme_override_font_sizes/font_size = 60
+text = "总音量"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Mster" type="HSlider" parent="MarginBorder/PanelBox/SettingPanel/MarginPanel/SettingBox"]
+layout_mode = 2
+max_value = 1.0
+step = 0.001
+value = 1.0
+script = ExtResource("3_mav8v")
+bus_name = "Master"
+
+[node name="Label2" type="Label" parent="MarginBorder/PanelBox/SettingPanel/MarginPanel/SettingBox"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_72ole")
+theme_override_font_sizes/font_size = 60
+text = "背景音乐"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Music" type="HSlider" parent="MarginBorder/PanelBox/SettingPanel/MarginPanel/SettingBox"]
+layout_mode = 2
+max_value = 1.0
+step = 0.001
+value = 1.0
+script = ExtResource("3_mav8v")
+bus_name = "Music"
+
+[node name="Label3" type="Label" parent="MarginBorder/PanelBox/SettingPanel/MarginPanel/SettingBox"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_72ole")
+theme_override_font_sizes/font_size = 60
+text = "特效音乐"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sfx" type="HSlider" parent="MarginBorder/PanelBox/SettingPanel/MarginPanel/SettingBox"]
+layout_mode = 2
+max_value = 1.0
+step = 0.001
+value = 1.0
+script = ExtResource("3_mav8v")
+bus_name = "Sfx"
+
+[node name="Back" type="Button" parent="MarginBorder/PanelBox/SettingPanel/MarginPanel/SettingBox"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "返回"
+
+[node name="InfoPanel" type="Panel" parent="MarginBorder/PanelBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="MarginPanel2" type="MarginContainer" parent="MarginBorder/PanelBox/InfoPanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 32
+theme_override_constants/margin_top = 32
+theme_override_constants/margin_right = 32
+theme_override_constants/margin_bottom = 32
+
+[node name="Info" type="RichTextLabel" parent="MarginBorder/PanelBox/InfoPanel/MarginPanel2"]
+layout_mode = 2
+theme_override_colors/default_color = Color(0.156863, 0.156863, 0.156863, 1)
+theme_override_constants/line_separation = 16
+theme_override_fonts/normal_font = ExtResource("2_tmf38")
+theme_override_font_sizes/normal_font_size = 42
+bbcode_enabled = true
+text = "Ver：0.0.1
+程序/美术/文案：@银河漫游KK
+背景音乐：9 A.M. - Cookie Tapes
+音效：https://freesound.org/
+"
+
+[connection signal="pressed" from="MarginBorder/PanelBox/SettingPanel/MarginPanel/SettingBox/FullScene" to="." method="_on_full_scene_pressed"]
+[connection signal="pressed" from="MarginBorder/PanelBox/SettingPanel/MarginPanel/SettingBox/WindowScene" to="." method="_on_window_scene_pressed"]
+[connection signal="pressed" from="MarginBorder/PanelBox/SettingPanel/MarginPanel/SettingBox/Back" to="." method="_on_back_pressed"]

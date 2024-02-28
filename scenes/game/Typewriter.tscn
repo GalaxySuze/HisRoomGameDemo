@@ -1,0 +1,79 @@
+[gd_scene load_steps=4 format=3 uid="uid://lay5g5w73bs8"]
+
+[ext_resource type="Theme" uid="uid://clo418x7u11hb" path="res://resources/themes/ItemTheme.tres" id="1_vfapf"]
+[ext_resource type="Script" path="res://scenes/game/Typewriter.gd" id="1_y1h2g"]
+[ext_resource type="FontFile" uid="uid://oxoa1t83sxb3" path="res://resources/fonts/HanChanChillRoundF.ttf" id="2_woj3v"]
+
+[node name="Typewriter" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_vfapf")
+script = ExtResource("1_y1h2g")
+
+[node name="Bg" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Content" type="Label" parent="."]
+custom_minimum_size = Vector2(960, 0)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -694.5
+offset_top = -214.0
+offset_right = 694.5
+offset_bottom = 214.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.156863, 0.156863, 0.156863, 1)
+theme_override_constants/line_spacing = 15
+theme_override_fonts/font = ExtResource("2_woj3v")
+theme_override_font_sizes/font_size = 32
+text = "不知道从什么时候开始，我们从小时候就被告知这样一个道理。
+人生是美好的，充满希望的，我们要伸手，去抓那个天上的星星，那是来自这个世界的善意。
+但当我们欣然接受后，成年后，走入世界，才明白并不是这样。
+这个世界上快乐是短暂的，大部分的时间由苦难来填充。
+我们不觉得，有可能是我们被身边重要的人保护着，还没有独自踏上台阶。"
+autowrap_mode = 1
+visible_characters = 0
+visible_ratio = 0.0
+
+[node name="BtnMargin" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -35.0
+offset_top = -99.0
+offset_right = 35.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/margin_bottom = 60
+
+[node name="Go" type="Button" parent="BtnMargin"]
+visible = false
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "继续"
+
+[node name="Enter" type="Button" parent="BtnMargin"]
+visible = false
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "开始"
+
+[connection signal="pressed" from="BtnMargin/Go" to="." method="_on_go_pressed"]
+[connection signal="pressed" from="BtnMargin/Enter" to="." method="_on_enter_pressed"]

@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://bda7sjjqfkd5q"]
+
+[ext_resource type="Script" path="res://globals/SoundManager.gd" id="1_ckjo6"]
+
+[node name="SoundManager" type="Node"]
+script = ExtResource("1_ckjo6")
+def_bgm = "res://resources/sound/bgm.mp3"
+pressed_sfx = "res://resources/sound/ui_click_01.wav"
+hover_sfx = "res://resources/sound/ui_hover_01.wav"
+
+[node name="BgmPlayer" type="AudioStreamPlayer" parent="."]
+bus = &"Music"
+
+[node name="SfxPlayer" type="AudioStreamPlayer" parent="."]
+bus = &"Sfx"

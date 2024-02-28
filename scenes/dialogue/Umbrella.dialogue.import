@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_10"
+type="Resource"
+uid="uid://cjcd7dycl0eix"
+path="res://.godot/imported/Umbrella.dialogue-83364cc63e5bef5c08cb3513b0f229fb.tres"
+
+[deps]
+
+source_file="res://scenes/dialogue/Umbrella.dialogue"
+dest_files=["res://.godot/imported/Umbrella.dialogue-83364cc63e5bef5c08cb3513b0f229fb.tres"]
+
+[params]
+
+defaults=true
