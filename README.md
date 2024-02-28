@@ -12,5 +12,7 @@
 
 # 游戏截图
 ![游戏截图1](https://github.com/GalaxySuze/HisRoomGameDemo/raw/main/doc/游戏截图1.png)
+---
 ![游戏截图2](https://github.com/GalaxySuze/HisRoomGameDemo/raw/main/doc/游戏截图2.png)
+---
 ![游戏截图3](https://github.com/GalaxySuze/HisRoomGameDemo/raw/main/doc/游戏截图3.png)
