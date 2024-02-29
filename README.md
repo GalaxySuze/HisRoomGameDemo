@@ -10,6 +10,12 @@
 # 演示视频
 [B站演示视频](https://www.bilibili.com/video/BV1Te41197jR/)
 
+---
+倘若项目代码在您的学习探索之旅中带来了些许帮助，也可以赞赏支持一下作者，感谢您的支持。
+
+![赞赏码](https://github.com/GalaxySuze/HisRoomGameDemo/raw/main/doc/赞赏码.jpg)
+
+
 # 游戏截图
 ![游戏截图1](https://github.com/GalaxySuze/HisRoomGameDemo/raw/main/doc/游戏截图1.png)
 ---
